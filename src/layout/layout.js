@@ -4,13 +4,14 @@ import { AppConfig } from "../utils/AppConfig";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div className="antialiased text-gray-600">
+    <>
       <Meta title={AppConfig.title} description={AppConfig.description} />
-      <Header/>
+      <Header />
+      {children}
       <Footer />
-    </div>
+    </>
   );
 };
 

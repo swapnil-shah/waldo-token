@@ -8,4 +8,31 @@
   body {
     font-family: "Poppins", serif;
   }
+  h3.subheader::after {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -5px;
+    left: 50%;
+    content: "";
+    height: 3px;
+    width: 75%;
+    @apply bg-primary;
+    border-radius: 10rem;
+    margin: auto;
+  }
+}
+
+@layer components {
+  h3.subheader {
+    @apply relative uppercase  mb-8 inline-block text-2xl tracking-wider font-semibold text-center;
+  }
+  .btn {
+    @apply px-3 py-2 font-semibold transform rounded-md shadow-sm  border capitalize hover:-translate-y-px hover:shadow-md  transition duration-200 border-primary text-sm md:text-base;
+  }
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-primary-hover;
+  }
+  .btn-secondary {
+    @apply bg-white text-primary border-primary;
+  }
 }

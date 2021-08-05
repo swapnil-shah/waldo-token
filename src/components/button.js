@@ -1,11 +1,17 @@
 import React from "react";
 
-const Button = ({ primary, text }) => {
+const Button = ({ primary, text, url, small }) => {
   return (
     <>
-      <button className="px-3 py-2 font-semibold text-white transform rounded-lg shadow-sm bg-primary capitalize hover:shadow-lg hover:bg-primary-hover">
-        <a href="">{text}</a>
-      </button>
+      {primary ? (
+        <button className="btn btn-primary">
+          <a href={url}>{text}</a>
+        </button>
+      ) : (
+        <button className="btn btn-secondary">
+          <a href={url}>{text}</a>
+        </button>
+      )}
     </>
   );
 };
