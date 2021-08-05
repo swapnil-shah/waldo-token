@@ -4,7 +4,9 @@ const Partners = () => {
   return (
     <section className="bg-dark py-16">
       <div className="max-6-xl mx-auto flex justify-center">
-        <h3 className="subheader text-white">Partners</h3>
+        <h3 className="subheader" style={{ color: "white" }}>
+          Partners
+        </h3>
       </div>
       <div className="flex flex-wrap justify-around mb-6 space-x-12 lg:space-x-4">
         <img

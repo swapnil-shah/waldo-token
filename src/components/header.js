@@ -37,13 +37,15 @@ const Header = () => {
             src="/assets/images/logo/logo.svg"
             alt=""
           />
-          <h4 className="text-xl font-semibold hidden lg:block">Waldo Token</h4>
+          <h4 className="text-xl font-semibold hidden lg:block text-gray-700">
+            Waldo Token
+          </h4>
         </div>
         <nav className="hidden lg:block">
           <ul class="space-x-6 capitalize flex">
             {navItem.map((item, i) => (
               <li
-                className="cursor-pointer text-sm font-semibold  text-gray-400 hover:text-gray-500"
+                className="cursor-pointer text-sm text-gray-400 hover:text-gray-500 tracking-wide"
                 key={i}
               >
                 <Link href={item.path} activeClassName="text-black">

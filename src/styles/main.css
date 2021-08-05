@@ -8,8 +8,13 @@
   body {
     font-family: "Poppins", serif;
   }
-  h3.subheader::after {
-    position: absolute;
+  h3.subheader {
+    border: solid;
+    border-color: #e73151;
+    border-width: 0px 0 3px 0;
+    border-radius: 0% 0% 92% 0%/0 0 6% 0;
+    transform: rotate(2deg);
+    /* position: absolute;
     transform: translate(-50%, -50%);
     bottom: -5px;
     left: 50%;
@@ -18,16 +23,16 @@
     width: 75%;
     @apply bg-primary;
     border-radius: 10rem;
-    margin: auto;
+    margin: auto; */
   }
 }
 
 @layer components {
   h3.subheader {
-    @apply relative uppercase  mb-8 inline-block text-2xl tracking-wider font-semibold text-center;
+    @apply relative uppercase text-dark mb-4 inline-block text-2xl tracking-wider font-semibold text-center;
   }
   .btn {
-    @apply px-3 py-2 font-semibold transform rounded-md shadow-sm  border capitalize hover:-translate-y-px hover:shadow-md  transition duration-200 border-primary text-sm md:text-base;
+    @apply px-3 py-2 font-semibold transform rounded-md shadow-sm  border capitalize hover:-translate-y-px hover:shadow-md  transition duration-200 border-primary text-sm md:text-base tracking-wide;
   }
   .btn-primary {
     @apply text-white bg-primary hover:bg-primary-hover;
