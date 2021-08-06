@@ -1,32 +1,12 @@
 import React from "react";
 
-const Tokenomics = () => {
-  const items = [
-    {
-      title: "$0.40",
-      subTitle: "Private Sale",
-    },
-    {
-      title: "$0.55",
-      subTitle: "Presale",
-    },
-    {
-      title: "$0.62",
-      subTitle: "Launch price on PanCakeSwap",
-    },
-    {
-      title: "211,000",
-      subTitle: "Launch Supply",
-    },
-  ];
+const Roadmap = () => {
+  const items = [];
   return (
     <section>
       <div className="mt-40 grid grid-cols-4 w-11/12 md:11/12 mx-auto">
-        <div className="col-span-2 mr-2">
-          <img src="assets/images/waldo_dots.png" alt="" />
-        </div>
         <div className="col-span-2 lg:pl-8">
-          <h3 className="subheader">Tokenmocis</h3>
+          <h3 className="subheader">Roadmap</h3>
           <p className="mt-4 text-lg text-gray-600 leading-relaxed">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -46,9 +26,12 @@ const Tokenomics = () => {
             ))}
           </ul>
         </div>
+        <div className="col-span-2 mr-2n bg-primary">
+          <img src="assets/images/waldo_roadmap.png" alt="" />
+        </div>
       </div>
     </section>
   );
 };
 
-export default Tokenomics;
+export default Roadmap;
