@@ -26,7 +26,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full font-display sticky top-0 md:absolute md:top-8 z-10">
+    <header className="w-full sticky top-0 md:absolute md:top-8 z-10">
       <div className="w-full md:w-11/12 mx-auto flex justify-between shadow-sm py-3 bg-white md:rounded-3xl px-2 md:px-8 items-center">
         <div className="block md:hidden">
           <BiMenuAltLeft className="text-5xl text-primary" />

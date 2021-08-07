@@ -9,9 +9,9 @@ const Index = () => (
     <main>
       <Hero />
       <HowItWorks />
+      <Partners />
       <Tokenomics />
       <Roadmap />
-      <Partners />
     </main>
   </Layout>
 );

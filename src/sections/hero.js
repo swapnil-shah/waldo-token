@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "../components/button";
+import Social from "../components/social";
 const Hero = () => {
   return (
     <section className="bg-secondary w-screen h-screen flex-col md:flex-row">
       <div className="w-full md:w-11/12 mx-auto pt-6 md:pt-64 flex flex-col md:flex-row">
         <div className="z-0">
           <img
-            className="w-full object-contain max-w-sm absolute right-0 bg-gradient-to-b via-white from-transparent md:via-transparent to-transparent"
+            className="w-full object-contain max-w-sm absolute right-0 bg-gradient-to-b via-white from-transparent md:via-transparent to-transparent opacity-40 md:opacity-100"
             src="/assets/images/hero.png"
             alt=""
           />
@@ -21,6 +22,9 @@ const Hero = () => {
           <div className="flex space-x-4 mt-8">
             <Button text="buy token" url="" primary />
             <Button text="wallypaper" url="" />
+          </div>
+          <div>
+            <Social />
           </div>
         </div>
       </div>

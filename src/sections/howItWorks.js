@@ -20,8 +20,10 @@ const HowItWorks = () => {
   ];
   return (
     <section>
-      <div className="mt-40 w-11/12 md:11/12 mx-auto text-center">
-        <h3 className="subheader">How It Works</h3>
+      <div className="mt-40 w-11/12 mx-auto">
+        <div className="w-full text-center">
+          <h3 className="subheader">How It Works</h3>
+        </div>
         <div className="mt-8 grid grid-cols-1  md:grid-cols-3 gap-6 ">
           {items.map((item, i) => (
             <div className="flex justify-center flex-col items-center mt-4 md:mt-0">
