@@ -29,7 +29,7 @@ const Roadmap = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 mt-8">
           <div className="hidden md:block col-span-2">
             <img
-              className="w-1/2"
+              className="w-1/2 float-right"
               src="assets/images/waldo_roadmap.png"
               alt=""
               style={{ transform: "scaleX(-1)" }}

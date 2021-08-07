@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Button from "./button";
 import { BiMenuAltLeft } from "react-icons/bi";
 
-const Header = () => {
+const Header = ({ isOpen, menuToggle }) => {
   const router = useRouter();
   const navItem = [
     {
@@ -26,9 +26,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full sticky top-0 md:absolute md:top-8 z-10">
+    <header
+      className={isOpen ? "hidden" : "w-full  top-0 md:absolute md:top-8 z-10"}
+    >
       <div className="w-full md:w-11/12 mx-auto flex justify-between shadow-sm py-3 bg-white md:rounded-3xl px-2 md:px-8 items-center">
-        <div className="block md:hidden">
+        <div className="block md:hidden" onClick={menuToggle}>
           <BiMenuAltLeft className="text-5xl text-primary" />
         </div>
         <div className="flex md:space-x-2 items-center">
