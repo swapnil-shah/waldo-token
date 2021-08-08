@@ -10,18 +10,22 @@ const Header = ({ isOpen, menuToggle }) => {
     {
       path: "/",
       label: "Home",
+      comingSoon: false,
     },
     {
       path: "wheres-waldo",
       label: "Play Wheres Waldo",
+      comingSoon: true,
     },
     {
       path: "nft-marketplace",
       label: "NFT Marketplace",
+      comingSoon: true,
     },
     {
       path: "https://www.google.com/",
       label: "Waldoswap",
+      comingSoon: false,
     },
   ];
 
@@ -33,21 +37,27 @@ const Header = ({ isOpen, menuToggle }) => {
         <div className="block md:hidden" onClick={menuToggle}>
           <BiMenuAltLeft className="text-5xl text-primary" />
         </div>
-        <div className="flex md:space-x-2 items-center">
-          <img
-            className="w-12 h-12"
-            src="/assets/images/logo/logo.svg"
-            alt=""
-          />
-          <h4 className="text-xl font-semibold hidden lg:block text-gray-700">
-            Waldo Token
-          </h4>
-        </div>
+        <Link href="/">
+          <div className="flex md:space-x-2 items-center cursor-pointer">
+            <img
+              className="w-12 h-12"
+              src="/assets/images/logo/logo.svg"
+              alt=""
+            />
+            <h4 className="text-xl font-semibold hidden lg:block text-gray-700">
+              Waldo Token
+            </h4>
+          </div>
+        </Link>
         <nav className="hidden lg:block">
           <ul class="space-x-6 capitalize flex">
             {navItem.map((item, i) => (
               <li
-                className="cursor-pointer text-sm text-gray-400 hover:text-gray-500 tracking-wide"
+                className={
+                  item.comingSoon
+                    ? "coming-soon cursor-pointer text-sm text-gray-400 hover:text-gray-500 tracking-wide relative"
+                    : "cursor-pointer text-sm text-gray-400 hover:text-gray-500 tracking-wide relative"
+                }
                 key={i}
               >
                 <Link href={item.path} activeClassName="text-black">

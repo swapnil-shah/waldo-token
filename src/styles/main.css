@@ -8,6 +8,15 @@
   body {
     font-family: "Poppins", serif;
   }
+  li.coming-soon::before {
+    content: "Coming Soon";
+    font-size: 10px;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    display: block;
+    color: #e73151;
+  }
   h3.subheader {
     border: solid;
     border-color: #e73151;
@@ -20,6 +29,39 @@
     left: -20px;
     top: -10px;
     content: url("/assets/images/roadmap-pulse.svg");
+  }
+  .glass:before {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 3px;
+    left: 3px;
+    content: "";
+    background-image: url(https://3.bp.blogspot.com/-JlYXI_mJn7U/UFIJ7_8iLJI/AAAAAAAAAWY/ClZoftC59Uc/s1600/TheGobblingGluttons.jpg);
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    -webkit-filter: blur(0px);
+    background-position: top center;
+    background-attachment: fixed;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    z-index: 898;
+    zoom: 1.1;
+  }
+  .glass:after {
+    position: absolute;
+    background: #000;
+    width: 120px;
+    height: 120px;
+    content: "";
+    display: block;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-image: url(https://3.bp.blogspot.com/-JlYXI_mJn7U/UFIJ7_8iLJI/AAAAAAAAAWY/ClZoftC59Uc/s1600/TheGobblingGluttons.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    z-index: 889;
+    -webkit-filter: blur(1px) saturate(120%);
   }
 }
 
